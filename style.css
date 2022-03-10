@@ -147,6 +147,7 @@ img{
 		.search{
 			float: left; font-size: 0.875em; color: #7e7f84; border:none; line-height: 1.4;
 		}
+
 .my-slider ul li{
 	position: relative; color: #f45a40;
 }	
@@ -214,7 +215,7 @@ img{
 		float: left;
 	} 
 	.basket-btn{
-		float: right; h
+		float: right; 
 	}
 .about{
 	margin-bottom: 60px;
@@ -291,6 +292,15 @@ img{
 }
 .ftrsubmit{
 	background:#f45a40 ;text-transform: uppercase;font-size: 0.875em;border:none;color: #fff;padding: 7px 20px; cursor: pointer;
+}
+.slider{
+	display: none;
+}
+.slider.active{
+	display: block;
+}
+.container-slider{
+	list-style: none;
 }
 @media screen and (max-width: 900px){
 	.my-slider ul li h2{
