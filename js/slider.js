@@ -6,7 +6,7 @@ let index = 0
 
 
 const slideInterval = setInterval(() => {
-   
+//      
 },2000)
 
 
@@ -22,7 +22,7 @@ function nextSlide(){
 
 function activeSlide(n){
     for(let slide of slider){
-        slide.classList.remove('active')
+        
     }
     slider[n].classList.add('active')
 }
