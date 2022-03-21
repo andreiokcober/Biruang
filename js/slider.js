@@ -1,28 +1,39 @@
-const slider = document.querySelectorAll('.slider')
+const sliders = document.querySelectorAll('#slider')
+const slide = document.querySelector('#slider')
+const containerSlider = document.querySelector('.container-slider')
+const count = sliders.length
 
+
+containerSlider.style.width = `${count * 100}`+ '%' 
+slide.style.transition =  'transform 1s '
 
 let index = 0
 
 
 
-const slideInterval = setInterval(() => {
-//      
-},2000)
 
 
-function nextSlide(){
-    if(index === slider.length - 1){
-        index = 0
-        activeSlide(index)
-    } else {
-        index++
-        activeSlide(index)
-    }
-}
-
-function activeSlide(n){
-    for(let slide of slider){
+document.addEventListener('DOMContentLoaded',    () =>  {
+        const interval = setInterval(  () => {
+          startSlide()
         
+    },2000)
+   
+    
+})
+
+ async function startSlide(){
+    if(index === count  ){
+        sliders.forEach( (slide) =>{ 
+            slide.style.transform = 'translateX(0%)'
+        })
+        index = 0
+    } else {
+        sliders.forEach( (slide) =>{
+             slide.style.transform = `translateX(${index * -100 + '%'})` 
+        })
+       
     }
-    slider[n].classList.add('active')
+        index++
+        
 }

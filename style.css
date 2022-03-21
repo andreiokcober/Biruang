@@ -63,6 +63,7 @@ body {
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
 	font-family: 'Roboto', sans-serif;
+	
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
 	color: #e6618c;
@@ -80,8 +81,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight:normal;
 }
 img{
-
-	/* max-width:100%; */
+	max-width:100%;
 }
 .clr{
 	clear:both;
@@ -148,6 +148,13 @@ img{
 			float: left; font-size: 0.875em; color: #7e7f84; border:none; line-height: 1.4;
 		}
 
+.container-slider{
+	list-style: none;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+.my-slider {overflow: hidden;}
 .my-slider ul li{
 	position: relative; color: #f45a40;
 }	
@@ -293,12 +300,7 @@ img{
 .ftrsubmit{
 	background:#f45a40 ;text-transform: uppercase;font-size: 0.875em;border:none;color: #fff;padding: 7px 20px; cursor: pointer;
 }
-.container-slider{
-	list-style: none;
-	display: flex;
-	overflow: hidden;
-	
-}
+
 
 @media screen and (max-width: 900px){
 	.my-slider ul li h2{
@@ -381,4 +383,4 @@ img{
 	.my-slider ul li p{
 	top: 80px; 
 	}
-}
+)
