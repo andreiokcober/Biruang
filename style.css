@@ -131,7 +131,7 @@ img{
 	flex-wrap: wrap;
 }
 	.menu li{
-		float: left; text-transform: uppercase; margin-right: 30px; font-size: 0.875em;
+		float: left; text-transform: uppercase; margin-right: 30px; font-size: 0.875em;margin-bottom: 10px;
 	}
 	.menu li a{
 		text-decoration: none; color: #7e7f84;
@@ -318,11 +318,6 @@ img{
 	}
 	.subscribe-form{
 		float: none; display: table;margin:0 auto;
-}
-@media (max-width: 758px){
-	.search-block{
-		margin-top: 14px;
-	}
 }
 @media screen and (max-width: 740px){
 	.my-slider ul li h2{
