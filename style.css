@@ -97,7 +97,7 @@ img{
 	margin: 0 auto;
 }
 .header-top{
-	padding: 30px 0; border-bottom: 1px #eee solid;
+	padding: 30px 10px; border-bottom: 1px #eee solid;
 }
 .logo{
 	float: left; font-size: 1.375em; font-family: 'Roboto Condensed', sans-serif;
@@ -124,11 +124,12 @@ img{
 	color: #f45a40;
 }
 .header-bottom{
-	padding:10px 0;
+	padding:10px;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-	.menu{
-		float: left;
-	}
 	.menu li{
 		float: left; text-transform: uppercase; margin-right: 30px; font-size: 0.875em;
 	}
@@ -138,14 +139,11 @@ img{
 	.menu li a:hover{
 		color: #f45a40;
 	}
-	.search-block{
-		float: left; margin-top: -3px;
-	}
 		.search-btn{
-			float: left; margin-top: 5px; margin-right: 5px;
+			  margin-right: 5px;
 		}
 		.search{
-			float: left; font-size: 0.875em; color: #7e7f84; border:none; line-height: 1.4;
+			 font-size: 0.875em; color: #7e7f84; border:none; line-height: 1.4;
 		}
 
 .container-slider{
@@ -226,6 +224,7 @@ img{
 	}
 .about{
 	margin-bottom: 60px;
+	padding: 0px 10px;
 }
 	.about article{
 		float: left; width:60%;
@@ -265,7 +264,7 @@ img{
 		cursor: pointer;font-size: 0.875em;
 	}
 .ftr{
-	background: #2a2d34; padding: 40px 0;
+	background: #2a2d34; padding: 40px 10px;
 }
 .ftr h2{
 	color: #fff; font-size: 1.325em; font-family: 'Roboto', sans-serif;text-transform: uppercase;margin-bottom: 10px;
@@ -301,7 +300,6 @@ img{
 	background:#f45a40 ;text-transform: uppercase;font-size: 0.875em;border:none;color: #fff;padding: 7px 20px; cursor: pointer;
 }
 
-
 @media screen and (max-width: 900px){
 	.my-slider ul li h2{
 	 top: 150px;  font-size: 3em; 
@@ -321,15 +319,17 @@ img{
 	.subscribe-form{
 		float: none; display: table;margin:0 auto;
 }
+@media (max-width: 758px){
+	.search-block{
+		margin-top: 14px;
+	}
+}
 @media screen and (max-width: 740px){
 	.my-slider ul li h2{
 	 top: 100px;  font-size: 2em; 
 	}
 	.my-slider ul li p{
 	top: 180px; 
-	}
-	.search-block{
-		border-top: 1px solid #eee;border-bottom: 1px solid #eee;margin-top: 10px;padding: 5px 0 7px 0 ;float: right;
 	}
 }	
 @media screen and (max-width: 600px){
@@ -383,4 +383,4 @@ img{
 	.my-slider ul li p{
 	top: 80px; 
 	}
-)
+}
